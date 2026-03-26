@@ -3,6 +3,18 @@
 ## Introduction
 The app on __Toit__ shown below, running on an ESP32-S3, enables continuous measurement of seven medical parameters using __COLMI R09__ or __R12__ _smart rings_: __heart rate__, __SpO2__, __blood pressure__, __temperature__, __HRV__, __stress__ and __blood sugar__. The patient does not need to be in the room where the chip is installed. The app continuously monitors the smart ring's availability and, if the connection is lost, attempts to reconnect to the device and resume measurements from where they were previously.
 
+## Notes
+
+> App using the ntp package (https://docs.toit.io/tutorials/misc/date-time)
+
+> Command to run app:
+```
+micrcx@micrcx-desktop:~/toit/ble_scan$ jag run -d basic ble_scan_runner.toit
+Scanning for device with name: 'basic'
+Running 'ble_scan_runner.toit' on 'basic' ...
+Success: Sent 86KB code to 'basic' in 3.58s
+micrcx@micrcx-desktop:~/toit/ble_scan$ 
+```
 ## Trace log
 The trace log is given below:
 ```
